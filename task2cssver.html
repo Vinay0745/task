@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .vertical-navbar {
+            width: 200px;
+            background-color: #333;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .vertical-navbar a {
+            padding: 10px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+        .vertical-navbar a.active {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        .vertical-navbar a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="vertical-navbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">Java</a>
+    <a href="#">CSS</a>
+    <a href="#">HTML</a>
+    <a href="#">Bootstrap</a>
+</div>
+
+<div style="margin-left: 220px;">
+    <p>This is the main content area.</p>
+</div>
+
+</body>
+</html>

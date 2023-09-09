@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            text-align: left;
+            width: auto;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        select::-ms-expand,
+        select::-webkit-select {
+            background-color: black;
+            color: white;
+            border-radius: 0;
+        }
+        input[type="button"] {
+            width: auto;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+
+        <label for="rePassword">Re-Password:</label>
+        <input type="password" id="rePassword">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+
+        <label for="age">Age:</label>
+        <input type="text" id="age">
+
+        <label for="gender">Gender:</label>
+        <select name="gen" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        
+        <input type="button" value="Save">
+    </form>
+</body>
+</html>
